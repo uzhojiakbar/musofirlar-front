@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&display=swap');
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#page {
+  min-width: 100vw;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'EastmanRomanTrial-DemiBold';
+  src: url('/fonts/eastman/EastmanRomanTrial-DemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
