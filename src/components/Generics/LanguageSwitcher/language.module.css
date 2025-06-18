@@ -1,0 +1,86 @@
+.customSelect {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  font-family: inherit;
+}
+
+.selectedOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid #3d4554;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  min-height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: border 0.2s;
+
+  user-select: none;
+}
+
+.selectedOption img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.selectedLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 22px;
+  color: #888;
+  pointer-events: none;
+}
+
+.optionsList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 110px;
+  background: #fff;
+  border: 1.5px solid #3a3d41;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.15s;
+}
+
+.optionItem img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.optionItem:hover,
+.optionItem.active {
+  background: #f0f0f0;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
